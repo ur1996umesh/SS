@@ -3,13 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-const routes = {}
+import { SsHomeComponent } from './ss-home/ss-home.component';
+const routes = [{path:'',component:SsHomeComponent,children:[
+{path:'',loadModule:()=> import('./tickets/tickets.module').then(m=>m.TicketsModule)}]}]
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SsHomeComponent
   ],
   imports: [
-    BrowserModule,RouterModule.forRoot([routes])
+    BrowserModule,RouterModule.forRoot([...routes])
     
       ],
   providers: [],
