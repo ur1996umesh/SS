@@ -10,6 +10,7 @@ export class TicketRootComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log('ok')
   }
 
 }
