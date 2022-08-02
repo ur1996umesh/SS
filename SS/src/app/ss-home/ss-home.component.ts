@@ -10,6 +10,7 @@ export class SsHomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    const x =5;
   }
 
 }
