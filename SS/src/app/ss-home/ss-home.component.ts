@@ -11,7 +11,8 @@ export class SsHomeComponent implements OnInit {
 
   ngOnInit(): void {
     const x =345;
-    console.log(x)
+    console.log(x);
+    cosole.log('commited')
   }
 
 }
