@@ -5,13 +5,15 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { SsHomeComponent } from './ss-home/ss-home.component';
 import { CaseComponent } from './case/case.component';
+import { ActionComponent } from './action/action.component';
 const routes = [{path:'',component:SsHomeComponent,children:[
 {path:'',loadModule:()=> import('./tickets/tickets.module').then(m=>m.TicketsModule)}]}]
 @NgModule({
   declarations: [
     AppComponent,
     SsHomeComponent,
-    CaseComponent
+    CaseComponent,
+    ActionComponent
   ],
   imports: [
     BrowserModule,RouterModule.forRoot([...routes])
